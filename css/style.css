@@ -2,14 +2,12 @@
     padding: 0;
     margin: 0;
 }
-
 .d_flex {
     display: flex;
     justify-content: space-between;
     margin: auto;
     align-items: center;
 }
-
 header {
     background: #181818;
 }
@@ -17,11 +15,9 @@ header {
     max-width: 1200px;
     padding: 24px 0;
 }
-
 header .wrapper ul {
     list-style: none;
 }
-
 header .wrapper ul li a {
     font-family: 'Poppins';
     font-style: normal;
@@ -34,11 +30,9 @@ header .wrapper ul li a {
     display: inline-block;
     transition: 0.5s;
 }
-
 header .wrapper ul li a:hover {
     transform: scale(1.3);
 }
-
 header .wrapper ul li:last-of-type a {
     font-family: 'Poppins';
     font-style: normal;
@@ -51,7 +45,6 @@ header .wrapper ul li:last-of-type a {
     border-radius: 14px;
     padding: 11px 20px;
 }
-
 header .wrapper ul li:first-of-type a {
     font-family: 'Poppins';
     font-style: normal;
@@ -61,4 +54,70 @@ header .wrapper ul li:first-of-type a {
     color: #FFFFFF;
     margin-right: 24px;
 }
+
+/*-----------------------studios-------------------*/
+
+.studios {
+    min-height: 716px;
+    padding-bottom: 71px;
+    background-image: url("../img/aperture_studios_back.jpg");
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+}
+.studios .description {
+    max-width: 580px;
+}
+.studios .description h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+.studios .description h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+.studios .description p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+.studios nav ul li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    list-style: none;
+    margin-left: 16px;
+}
+
+.studios nav {
+    position: absolute;
+    right: 40px;
+    bottom: 41px;
+}
+.studios nav ul:first-of-type li:before {
+}
+
+
 
