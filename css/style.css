@@ -619,6 +619,7 @@ header .wrapper ul li:first-of-type a {
 .help .description {
     max-width: 600px;
     margin: auto;
+    text-align: center;
 }
 .help .description h2 {
     font-family: 'Poppins';
@@ -638,6 +639,7 @@ header .wrapper ul li:first-of-type a {
     line-height: 30px;
     text-align: center;
     color: #C0C0C0;
+    margin-bottom: 22px;
 }
 
 .help .description a {
