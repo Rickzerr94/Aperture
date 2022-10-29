@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    header{
+        /*background-color: red;*/
+    }
+}
+@media only screen and (max-width: 428px) {
+    header{
+        /*background-color: green;*/
+    }
+}
+@media only screen and (max-width: 360px) {
+    header{
+        /*background-color: yellow;*/
+    }
+}
