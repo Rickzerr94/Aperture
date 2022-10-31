@@ -592,29 +592,46 @@ header .wrapper ul li:first-of-type a {
 .past_clients .description .logos {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin: 82px 0 40px;
 }
 .past_clients .description .logos img {
     max-width: 128px;
     display: inline-block;
 }
-.owl-carousel .owl-item, active {
+.owl-carousel .owl-item {
     display: flex;
     justify-content: center;
 }
-
-.past_clients .owl-carousel .owl_dots .owl-dot{
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+.past_clients .owl-carousel .owl-dots .owl-dot span {
+    display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    color: #FFFFFF;
+    background-color: grey;
+    margin: 0 10px;
+}
+
+.past_clients .owl-carousel .owl-dots .owl-dot.active span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 10px;
 }
 
 .owl-dots {
+    display: inline-block;
     position: absolute;
     width: 50%;
     top: 100px;
+    text-align: center;
+
+
 }
 
 /*-------------------himalayas----------------------*/
