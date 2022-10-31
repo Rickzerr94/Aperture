@@ -613,6 +613,8 @@ header .wrapper ul li:first-of-type a {
     border-radius: 10px;
     background-color: grey;
     margin: 0 10px;
+    opacity: 0.3;
+
 }
 
 .past_clients .owl-carousel .owl-dots .owl-dot.active span {
@@ -622,6 +624,7 @@ header .wrapper ul li:first-of-type a {
     border-radius: 10px;
     background-color: white;
     margin: 0 10px;
+    opacity: inherit;
 }
 
 .owl-dots {
