@@ -148,7 +148,7 @@ header .wrapper ul li:first-of-type a {
 
 .we_do {
     background: #000000;
-    padding: 113px 0 100px;
+    padding: 113px 0 0;
 }
 .we_do h2 {
     font-family: 'Poppins';
@@ -241,12 +241,63 @@ header .wrapper ul li:first-of-type a {
 .ui-widget-content {
     border: none;
     background: black;
+    padding: 0;
 }
 .ui-accordion .ui-accordion-content {
     max-width: 1168px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+}
+.ui-accordion .ui-accordion-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+.ui-accordion .ui-accordion-header.ui-state-hover .ui-icon {
+    background-image: none;
+}
+@keyframes slider_left {
+    0%{
+        top: 0px;
+    }
+    100%{
+        left: -15px;
+    }
+
+}
+.ui-icon, .ui-widget-content .ui-icon, .ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+    margin: 0;
+    position: relative;
+    top: 0px;
+    left: -10px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    animation: slider_left 1s infinite;
+
+}
+.ui-icon:after {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f078";
+}
+@keyframes slide {
+    0%{
+        top: -15px;
+    }
+    100%{
+        top: 0px;
+    }
+
+}
+.ui-accordion-header.ui-state-active .ui-icon {
+    transform: rotate(0deg);
+    top: -5px;
+    animation: slide 1s infinite;
 }
 /*--------------------------Fuji--------------------*/
 
@@ -543,6 +594,26 @@ header .wrapper ul li:first-of-type a {
     justify-content: space-around;
     align-items: center;
     margin: 82px 0 40px;
+}
+.past_clients .description .logos img {
+    max-width: 128px;
+    display: inline-block;
+}
+.owl-carousel .owl-item, active {
+    display: flex;
+    justify-content: center;
+}
+
+.owl_dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.owl-dots {
+    position: absolute;
+    width: 50%;
 }
 
 /*-------------------himalayas----------------------*/
