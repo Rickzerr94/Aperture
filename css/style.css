@@ -18,14 +18,27 @@ header {
     max-width: 1200px;
     padding: 24px 0;
     margin: auto;
+    display: flex;
     justify-content: space-between;
-
 }
-
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        display: block;
+    }
+}
 .nav__list {
     display: flex;
     align-items: center;
 }
+@media only screen and (max-width: 767px) {
+    .nav__list {
+        display: inline-block;
+    }
+    .nav {
+        right: 0;
+    }
+}
+
 .hover-target {
     font-family: 'Poppins';
     font-style: normal;
@@ -73,8 +86,6 @@ header .wrapper .nav-but-wrap {
 .wrapper .nav {
     position: static;
     top: 0;
-    display: flex;
-    justify-content: flex-end;
 
 }
 .nav-but-wrap .menu-icon {
