@@ -3,12 +3,25 @@
     background: black;
     padding: 0;
 }
+@media screen and (max-width: 767px){
+    .ui-widget-content {
+        display: block;
+        justify-content: center;
+    }
+}
 .ui-accordion .ui-accordion-content {
     max-width: 1168px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 0;
+}
+@media screen and (max-width: 767px){
+    .ui-accordion .ui-accordion-content {
+        max-width: 560px;
+        display: block;
+        justify-content: center;
+    }
 }
 .ui-accordion .ui-accordion-header {
     background-color: transparent;

@@ -155,6 +155,9 @@ header {
 
   .description {
     max-width: 580px;
+    @include max-screen(767px){
+      padding: 0 15px;
+    }
 
     h4 {
       font-family: 'Poppins';
@@ -205,6 +208,9 @@ header {
         color: #FFFFFF;
         list-style: none;
         margin-left: 16px;
+        @include max-screen(320px){
+          margin-left: 10px;
+        }
       }
 
       .item1 {
@@ -349,6 +355,9 @@ header {
   align-items: center;
   padding-right: 62px;
   position: relative;
+  @include max-screen(767px){
+    padding-left: 15px;
+  }
   .fuji_content {
     width: 298px;
     h3 {
@@ -428,9 +437,15 @@ header {
   background: black;
   justify-content: left;
   position: relative;
+  @include max-screen(767px){
+    padding: 100px 0 0;
+  }
   .description {
     max-width: 1240px;
     margin: auto;
+    @include max-screen(767px){
+      max-width: 767px;
+    }
     h3 {
       font-family: 'Poppins';
       font-style: normal;
@@ -441,6 +456,9 @@ header {
       text-transform: uppercase;
       color: #C0C0C0;
       margin-bottom: 6px;
+      @include max-screen(767px){
+        text-align: center;
+      }
     }
     h2 {
       font-family: 'Poppins';
@@ -450,6 +468,9 @@ header {
       line-height: 32px;
       color: #FFFFFF;
       margin-bottom: 14px;
+      @include max-screen(767px){
+        text-align: center;
+      }
     }
     p {
       max-width: 514px;
@@ -460,6 +481,11 @@ header {
       line-height: 20px;
       color: #FFFFFF;
       margin-bottom: 20px;
+      @include max-screen(767px){
+        text-align: center;
+        max-width: none;
+        margin: 0 15px 40px 15px;
+      }
     }
     a {
       background: #FFFFFF;
@@ -473,6 +499,14 @@ header {
       letter-spacing: 0.4px;
       color: #000000;
       text-decoration: none;
+      @include max-screen(767px){
+        position: relative;
+        left: 40%;
+        top: -20px;
+      }
+      @include max-screen(428px){
+        left: 33%;
+      }
       &:before {
         display: inline-flex;
         align-items: center;
@@ -494,6 +528,11 @@ header {
     height: 100%;
     background-image: url("../img/tools.jpg");
     background-size: cover;
+    @include max-screen(767px){
+      position: static;
+      width: 100%;
+      height: 600px;
+    }
   }
   nav{
     position: absolute;
@@ -809,10 +848,16 @@ footer{
   .wrapper{
     max-width: 1168px;
     margin: auto;
+    @include max-screen(767px){
+      padding: 0 15px;
+    }
     .description{
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @include max-screen(767px){
+        justify-content: center;
+      }
       &:after {
         display: flex;
         content: "";
@@ -823,6 +868,9 @@ footer{
       }
       .aperture{
         a{
+          @include max-screen(767px){
+            text-align: center;
+          }
           img{
             margin-bottom: 20px;
           }
@@ -834,12 +882,24 @@ footer{
           font-size: 13px;
           line-height: 20px;
           color: #C0C0C0;
+          @include max-screen(767px){
+            margin-bottom: 20px;
+          }
         }
       }
       .describe{
         display: flex;
+        @include max-screen(428px){
+          display: block;
+        }
         .areas{
           min-width: 221px;
+          @include max-screen(767px){
+            text-align: center;
+          }
+          @include max-screen(428px){
+            margin-bottom: 40px;
+          }
           h4{
             font-family: 'Poppins';
             font-style: normal;
@@ -873,6 +933,9 @@ footer{
         }
         .pages{
           min-width: 221px;
+          @include max-screen(767px){
+            text-align: center;
+          }
           h4{
             font-family: 'Poppins';
             font-style: normal;
@@ -948,6 +1011,9 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include max-screen(428px){
+          min-width: 205px;
+        }
         label{
           display: none;
         }

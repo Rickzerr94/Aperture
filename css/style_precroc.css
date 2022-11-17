@@ -149,6 +149,11 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
 .studios .description {
   max-width: 580px;
 }
+@media screen and (max-width: 767px) {
+  .studios .description {
+    padding: 0 15px;
+  }
+}
 .studios .description h4 {
   font-family: "Poppins";
   font-style: normal;
@@ -193,6 +198,11 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   color: #FFFFFF;
   list-style: none;
   margin-left: 16px;
+}
+@media screen and (max-width: 320px) {
+  .studios nav ul li {
+    margin-left: 10px;
+  }
 }
 .studios nav ul .item1:before {
   content: url("../img/timer_icon.svg");
@@ -317,6 +327,11 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   padding-right: 62px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .fuji {
+    padding-left: 15px;
+  }
+}
 .fuji .fuji_content {
   width: 298px;
 }
@@ -384,9 +399,19 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   justify-content: left;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .gear {
+    padding: 100px 0 0;
+  }
+}
 .gear .description {
   max-width: 1240px;
   margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .gear .description {
+    max-width: 767px;
+  }
 }
 .gear .description h3 {
   font-family: "Poppins";
@@ -399,6 +424,11 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   color: #C0C0C0;
   margin-bottom: 6px;
 }
+@media screen and (max-width: 767px) {
+  .gear .description h3 {
+    text-align: center;
+  }
+}
 .gear .description h2 {
   font-family: "Poppins";
   font-style: normal;
@@ -407,6 +437,11 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   line-height: 32px;
   color: #FFFFFF;
   margin-bottom: 14px;
+}
+@media screen and (max-width: 767px) {
+  .gear .description h2 {
+    text-align: center;
+  }
 }
 .gear .description p {
   max-width: 514px;
@@ -417,6 +452,13 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   line-height: 20px;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .gear .description p {
+    text-align: center;
+    max-width: none;
+    margin: 0 15px 40px 15px;
+  }
 }
 .gear .description a {
   background: #FFFFFF;
@@ -430,6 +472,18 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   letter-spacing: 0.4px;
   color: #000000;
   text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .gear .description a {
+    position: relative;
+    left: 40%;
+    top: -20px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .gear .description a {
+    left: 33%;
+  }
 }
 .gear .description a:before {
   display: inline-flex;
@@ -450,6 +504,13 @@ header .wrapper .nav .nav__content .nav__list .nav__list-item .hover-target {
   height: 100%;
   background-image: url("../img/tools.jpg");
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .gear .div_image {
+    position: static;
+    width: 100%;
+    height: 600px;
+  }
 }
 .gear nav {
   position: absolute;
@@ -732,10 +793,20 @@ footer .wrapper {
   max-width: 1168px;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  footer .wrapper {
+    padding: 0 15px;
+  }
+}
 footer .wrapper .description {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  footer .wrapper .description {
+    justify-content: center;
+  }
 }
 footer .wrapper .description:after {
   display: flex;
@@ -744,6 +815,11 @@ footer .wrapper .description:after {
   margin-top: 36px;
   height: 2px;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  footer .wrapper .description .aperture a {
+    text-align: center;
+  }
 }
 footer .wrapper .description .aperture a img {
   margin-bottom: 20px;
@@ -756,11 +832,31 @@ footer .wrapper .description .aperture p {
   line-height: 20px;
   color: #C0C0C0;
 }
+@media screen and (max-width: 767px) {
+  footer .wrapper .description .aperture p {
+    margin-bottom: 20px;
+  }
+}
 footer .wrapper .description .describe {
   display: flex;
 }
+@media screen and (max-width: 428px) {
+  footer .wrapper .description .describe {
+    display: block;
+  }
+}
 footer .wrapper .description .describe .areas {
   min-width: 221px;
+}
+@media screen and (max-width: 767px) {
+  footer .wrapper .description .describe .areas {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 428px) {
+  footer .wrapper .description .describe .areas {
+    margin-bottom: 40px;
+  }
 }
 footer .wrapper .description .describe .areas h4 {
   font-family: "Poppins";
@@ -794,6 +890,11 @@ footer .wrapper .description .describe .areas ul li a {
 }
 footer .wrapper .description .describe .pages {
   min-width: 221px;
+}
+@media screen and (max-width: 767px) {
+  footer .wrapper .description .describe .pages {
+    text-align: center;
+  }
 }
 footer .wrapper .description .describe .pages h4 {
   font-family: "Poppins";
@@ -866,6 +967,11 @@ footer .wrapper .description2 form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 428px) {
+  footer .wrapper .description2 form {
+    min-width: 205px;
+  }
 }
 footer .wrapper .description2 form label {
   display: none;
