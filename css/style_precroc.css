@@ -960,18 +960,14 @@ footer .wrapper .description2 .describe p {
   color: #C0C0C0;
 }
 footer .wrapper .description2 form {
-  min-width: 458px;
+  max-width: 458px;
+  width: 100%;
   height: 52px;
   background-color: #FFFFFF;
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (max-width: 428px) {
-  footer .wrapper .description2 form {
-    min-width: 205px;
-  }
 }
 footer .wrapper .description2 form label {
   display: none;
