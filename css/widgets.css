@@ -561,3 +561,8 @@ body.light .switch-wrap p span:nth-child(1):before {
 
 
 }
+@media screen and (max-width: 428px){
+    .owl-dots {
+        width: 100%;
+    }
+}
