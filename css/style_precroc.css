@@ -7,6 +7,18 @@
   margin: 0;
 }
 
+body .nav__content {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  body .nav__content {
+    display: none;
+  }
+}
+body.nav-active .nav__content {
+  display: block;
+}
+
 .d_flex {
   display: flex;
   justify-content: space-between;
